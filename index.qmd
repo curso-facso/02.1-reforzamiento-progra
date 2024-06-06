@@ -287,19 +287,19 @@ También podemos usar \>=
 
 . . .
 
-```{r}
+```{r, eval=FALSE}
 3 != 3 | 2 > 1
 ```
 
 . . .
 
-```{r}
+```{r, eval=FALSE}
 TRUE & FALSE 
 ```
 
 . . .
 
-```{r}
+```{r, eval=FALSE}
 TRUE | FALSE 
 ```
 
@@ -311,6 +311,8 @@ TRUE | FALSE
 -   Corresponden a arreglos que almacenan un **mismo tipo de dato** en cada una de sus entradas
 -   En R los vectores se pueden declarar con la función "c"
 :::
+
+. . .
 
 ```{r}
 v1 <- c(1,1,2,3,5,8,13)
@@ -540,7 +542,7 @@ mi_lista[[2]] <- "gato"
 mi_lista
 ```
 
-## Agregar alementos
+## Agregar elementos
 
 Podemos agregar elementos a mi lista
 
@@ -572,7 +574,7 @@ names(mi_lista)
 
 . . .
 
-### Los nombres nos pueden servir como "llaves"
+**Los nombres nos pueden servir como "llaves"**
 
 Podemos acceder a los elementos mediante sus nombres
 
@@ -580,7 +582,6 @@ Podemos acceder a los elementos mediante sus nombres
 mi_lista$gato
 mi_lista[["gato"]]
 ```
-
 . . .
 
 Podemos cambiar los elementos utilizando la llave-nombre. 
@@ -640,11 +641,11 @@ bandas <- list("beatles" = "The Beatles es una banda de rock de Reino Unido",
      )
 ```
 
-#### ¿Qué información está contenida en los textos?
+**¿Qué información está contenida en los textos?**
 
 . . .
 
-#### ¿A alguien se le ocurre una mejor forma de ordenar esta información? 
+**¿A alguien se le ocurre una mejor forma de ordenar esta información?** 
 
 
 ## Estructuras anidadas
@@ -664,11 +665,11 @@ bandas[["porcupine"]]
 bandas[["porcupine"]][2]
 ```
 
-## Ejercicio propuesto
+## Ejercicio propuesto (para la casa)
 
 Reemplaza la estructura anterior por una lista de listas. 
 
-Cada elemento dentro de las sublistas debeŕia tener un nombre
+Cada elemento dentro de las sublistas debería tener un nombre
 
 
 ## Data frames 
@@ -734,6 +735,20 @@ notas_edit %>%
 . . .
 
 **Si necesitan reforzar contenidos sobre manejo de dataframes, escríbanme para solicitar material complementario**
+
+
+
+## Comentarios finales
+
+Hemos visto fundamentos de programación
+
+. . .
+
+Esta clase solo es un repaso
+
+. . .
+
+Se asume que el manejo de dataframes con `dplyr` es parte de otros cursos 
 
 
 # Métodos computacionales para las ciencias sociales {.center background-color="aquamarine"}
