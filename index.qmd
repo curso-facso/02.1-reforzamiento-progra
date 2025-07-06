@@ -73,7 +73,7 @@ Necesito contar el número de apariciones de las palabras "derecha" e "izquierda
 -   Se debe supervisar lo que hace GPT
 :::
 
-## ¿GPT y este curso?
+## ¿Y qué pasa con los modelos de lenguaje?
 
 Aprovechen este curso para equivocarse y aprender
 
@@ -112,7 +112,7 @@ Tienen que aprender a programar para luego ser capaces de supervisar a los model
 
 ## Antes de seguir...
 
-¿Para qué existen los lenguajes de progrmación?
+¿Para qué existen los lenguajes de programación?
 
 ![](imagenes/emoji_duda.jpeg){fig-align="center" width="250"}
 
