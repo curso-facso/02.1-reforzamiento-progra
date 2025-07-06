@@ -161,7 +161,7 @@ sprintf("Me demoré %s segundos en contar", round(total_time, 3) )
 
 [Demostración visual](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
 
-[Comparación de tiepmo de ejecución](https://www.youtube.com/watch?v=ZZuD6iUe3Pc&ab_channel=ViktorBohush)
+[Comparación de tiempo de ejecución](https://www.youtube.com/watch?v=ZZuD6iUe3Pc&ab_channel=ViktorBohush)
 
 
 
