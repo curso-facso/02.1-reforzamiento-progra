@@ -48,7 +48,49 @@ Necesito contar el número de apariciones de las palabras "derecha" e "izquierda
 
 . . .
 
-**Warning**: Se incluyen más contenidos de programación que el año anterior
+**Necesitamos aprender algunos fundamentos antes de avanzar hacia herramientas de análisis**
+
+## ¿Y qué pasa con los modelos de lenguaje?
+
+![](imagenes/modelos_lenguaje.png){fig-align="center" width="1000"}
+
+## ¿Y qué pasa con los modelos de lenguaje?
+
+::: incremental
+-   Aumenta nuestra productividad
+-   Es parte de la vida profesional\
+-   Acelera nuestro aprendizaje
+-   Está transformando la forma de trabajar y deben aprender a usarlo
+:::
+
+. . .
+
+**Pero...**
+
+::: incremental
+-   No es un reemplazo del programador
+-   Se deben hacer las preguntas correctas
+-   Se debe supervisar lo que hace GPT
+:::
+
+## ¿GPT y este curso?
+
+Aprovechen este curso para equivocarse y aprender
+
+. . .
+
+Usar modelos de lenguaje irreflexivamente no aportará a su formación
+
+. . .
+
+Tienen que aprender a programar para luego ser capaces de supervisar a los modelos de lenguaje
+
+. . .
+
+**Saber programar nos ayuda a desarrollar habilidades**
+
+-   Orden de las ideas: pasar del diseño a la implementación
+-   Pensamiento algorítmico
 
 ## Existen muchos lenguajes
 
@@ -68,7 +110,83 @@ Necesito contar el número de apariciones de las palabras "derecha" e "izquierda
 
 #### Nosotros trabajaremos con R (90%) y Python (10%)
 
-## Contenidos de la clase de hoy
+## Antes de seguir...
+
+¿Para qué existen los lenguajes de progrmación?
+
+![](imagenes/emoji_duda.jpeg){fig-align="center" width="250"}
+
+. . .
+
+**Computador, haz un huevo frito:**
+
+-   Calienta aceite un una sartén
+-   Abre el huevo
+-   Ponlo en la sartén
+
+## Respuesta del computador
+
+![](imagenes/robot.png){fig-align="center" width="740"}
+
+. . .
+
+Los computadores no piensan y necesitan instrucciones precisas y no ambiguas
+
+. . .
+
+Necesitamos lenguajes de programación
+
+## ¿Qué hacen bien los computadores?
+
+Sumemos todos los números del 1 a 10.000.000
+
+1 + 2 + 4 + 5 + ...
+
+. . .
+
+```{r}
+start  <- Sys.time()
+count <- 0
+for (i in 1:10000000) {
+  count <- count  + i 
+}
+total_time <- Sys.time() - start  
+sprintf("Me demoré %s segundos en contar", round(total_time, 3) )
+
+```
+
+# 7 2 5 4 1 6 0 3
+
+## Recursos algoritmos
+
+[Demostración visual](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
+
+[Comparación de tiepmo de ejecución](https://www.youtube.com/watch?v=ZZuD6iUe3Pc&ab_channel=ViktorBohush)
+
+
+
+## ¿Objetivo de este módulo?
+
+
+**Aprenderemos cómo darle instrucciones al computador**
+
+
+**Revisaremos fundamentos de programación (R es solo una herramienta)**
+
+. . . 
+
+**Preparnos para adquirir herramientas de recolección y análisis de datos**
+
+# 
+
+![](imagenes/scratch.jpeg){fig-align="center" width="740"}
+
+
+
+
+
+
+## Contenidos de programación
 
 -   Declaración de variables
 -   Tipos de datos básicos en R
@@ -504,7 +622,7 @@ oda_al_completo[oda_al_completo == "completo" | oda_al_completo == "pan" ]
 
 ## Ejercicio ~~no tan rápido~~ (15 minutos)
 
-::: {.incremental}
+::: incremental
 1.  Crea un vector con números del uno al 1000
 2.  Crea un vector del 200 al 234
 3.  Combina ambos vectores en una variable llamada *vector_combinado*
@@ -548,7 +666,6 @@ Podemos agregar elementos a mi lista
 
 ![](imagenes/pudu.jpeg){fig-align="center" width="180"}
 
-
 ```{r}
 mi_lista[[3]] <- "pudú"
 mi_lista
@@ -582,9 +699,10 @@ Podemos acceder a los elementos mediante sus nombres
 mi_lista$gato
 mi_lista[["gato"]]
 ```
+
 . . .
 
-Podemos cambiar los elementos utilizando la llave-nombre. 
+Podemos cambiar los elementos utilizando la llave-nombre.
 
 En este caso, cambiamos el texto puma, por el que se muestra abajo
 
@@ -612,7 +730,6 @@ bandas <- list("beatles" = "The Beatles es una banda de rock de Reino Unido",
 bandas[["porcupine"]]
 ```
 
-
 ## Ejercicio express🕞: Lista Simpsons
 
 Crea una lista con tus 3 personajes favoritos de los Simpsons. Asocia una descripción o una frase a cada personaje
@@ -626,12 +743,9 @@ simpsons[["homero"]] <- "anda la osa"
 
 Extraer la frase asociada a uno de los personajes, utilizando el nombre del elemento
 
-
-
 ## Estructuras anidadas
 
 Volvamos al ejemplo anterior
-
 
 ```{r}
 bandas <- list("beatles" = "The Beatles es una banda de rock de Reino Unido",
@@ -645,11 +759,9 @@ bandas <- list("beatles" = "The Beatles es una banda de rock de Reino Unido",
 
 . . .
 
-**¿A alguien se le ocurre una mejor forma de ordenar esta información?** 
-
+**¿A alguien se le ocurre una mejor forma de ordenar esta información?**
 
 ## Estructuras anidadas
-
 
 ```{r}
 bandas <- list("beatles" = c("rock", "Reino Unido"),
@@ -667,14 +779,13 @@ bandas[["porcupine"]][2]
 
 ## Ejercicio propuesto (para la casa)
 
-Reemplaza la estructura anterior por una lista de listas. 
+Reemplaza la estructura anterior por una lista de listas.
 
 Cada elemento dentro de las sublistas debería tener un nombre
 
+## Data frames
 
-## Data frames 
-
-En R se implementan como una colección de listas del mismo largo 
+En R se implementan como una colección de listas del mismo largo
 
 ```{r}
 autos <- cars
@@ -685,10 +796,9 @@ typeof(autos)
 
 ![](imagenes/tidyverse.png){fig-align="center" width="250"}
 
+## Data frames
 
-## Data frames 
-
-Podemos declarar fácilmente un *dataframe* 
+Podemos declarar fácilmente un *dataframe*
 
 ```{r}
 
@@ -700,11 +810,9 @@ notas <- data.frame("nombre" = c("fernando", "juan", "pamela", "paula", "inés")
 notas
 ```
 
-
 ## dplyr
 
 Se sugiere utilizar las herramientas de dplyr para procesamiento de dataframes
-
 
 ```{r}
 library(dplyr)
@@ -718,6 +826,7 @@ notas_edit %>%
   filter(nota_estandarizada > 0)
 
 ```
+
 ## Más operaciones con dplyr
 
 ```{r}
@@ -736,8 +845,6 @@ notas_edit %>%
 
 **Si necesitan reforzar contenidos sobre manejo de dataframes, escríbanme para solicitar material complementario**
 
-
-
 ## Comentarios finales
 
 Hemos visto fundamentos de programación
@@ -748,7 +855,39 @@ Esta clase solo es un repaso
 
 . . .
 
-Se asume que el manejo de dataframes con `dplyr` es parte de otros cursos 
+Se asume que el manejo de dataframes con `dplyr` es parte de otros cursos
 
+## Tarea opcional con puntaje
+
+::: {.panel-tabset}
+
+## Instrucciones
+
+- Crear una cuenta en scratch [aquí](https://scratch.mit.edu/)
+
+- Crear un proyecto de scratch que tenga al menos los siguientes elementos
+  - 2 sprites
+  - 2 flujos de if o if/else 
+  - Creación y utilización de una variable
+  - Un ciclo (repeat) que se rompa a partir de una condición
+
+Tendrán 5 décimas para mejorar su nota en la ~~difícil~~ tarea 
+
+## Ejemplos
+
+
+
+**Algunas opciones**:
+
+- Una historia
+- Historia con interacciones
+
+Pueden explorar proyectos de la comunidad [aquí](https://scratch.mit.edu/explore/projects/stories/)
+
+No es necesario que sea algo demasiado complejo
+
+:::
 
 # Métodos computacionales para las ciencias sociales {.center background-color="aquamarine"}
+
+
