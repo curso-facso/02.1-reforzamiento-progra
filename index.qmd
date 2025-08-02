@@ -63,15 +63,68 @@ Necesito contar el número de apariciones de las palabras "derecha" e "izquierda
 -   Está transformando la forma de trabajar y deben aprender a usarlo
 :::
 
-. . .
+##  ¿Y qué pasa con los modelos de lenguaje?
+
+
+
+::: panel-tabset
+
+## paper
+
+::: columns
+::: {.column width="40%"}
+
+![](imagenes/paper_ai_work.png){fig-align="center" width="600"}
+
+:::
+::: {.column width="60%"}
+
+
+$$
+y_{it} = \delta_t + \alpha_i + \beta AI_{it} + \gamma X_{it} + \epsilon_{it}
+$$
+
+$y_{it}$: productividad del trabajador $i$ en el tiempo $t$ 
+
+$\delta_t$: fectos fijos de tiempo (impuestos, estación, etc.)
+
+$\alpha_i$: efectos fijos del trabajador
+
+:::
+:::
+
+
+
+
+
+## habilidades
+
+![](imagenes/skill.png){fig-align="center" width="800"}
+
+
+## experiencia
+
+![](imagenes/tenure.png){fig-align="center" width="800"}
+
+## curva-aprendizaje
+
+![](imagenes/curva.png){fig-align="center" width="800"}
+
+:::
+
+
+##  ¿Y qué pasa con los modelos de lenguaje?
 
 **Pero...**
 
 ::: incremental
--   No es un reemplazo del programador
+-   No es un reemplazo del analista
 -   Se deben hacer las preguntas correctas
 -   Se debe supervisar lo que hace GPT
+-   No podemos perder el control de nuestro código
 :::
+
+
 
 ## ¿Y qué pasa con los modelos de lenguaje?
 
@@ -91,6 +144,12 @@ Tienen que aprender a programar para luego ser capaces de supervisar a los model
 
 -   Orden de las ideas: pasar del diseño a la implementación
 -   Pensamiento algorítmico
+
+## ¿Y qué pasa con los modelos de lenguaje?
+
+Esta tecnología está disponible para hacer sus trabajos 
+
+La tarea individual deberá hacerse "a la antigua" 
 
 ## Existen muchos lenguajes
 

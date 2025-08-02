@@ -449,18 +449,67 @@
 <li class="fragment">Está transformando la forma de trabajar y deben aprender a usarlo</li>
 </ul>
 </div>
-<div class="fragment">
-<p><strong>Pero…</strong></p>
-<div>
-<ul>
-<li class="fragment">No es un reemplazo del programador</li>
-<li class="fragment">Se deben hacer las preguntas correctas</li>
-<li class="fragment">Se debe supervisar lo que hace GPT</li>
-</ul>
+</section>
+<section id="y-qué-pasa-con-los-modelos-de-lenguaje-2" class="slide level2">
+<h2>¿Y qué pasa con los modelos de lenguaje?</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">paper</a></li><li><a href="#tabset-1-2">habilidades</a></li><li><a href="#tabset-1-3">experiencia</a></li><li><a href="#tabset-1-4">curva-aprendizaje</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/paper_ai_work.png" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<p><span class="math display">\[
+y_{it} = \delta_t + \alpha_i + \beta AI_{it} + \gamma X_{it} + \epsilon_{it}
+\]</span></p>
+<p><span class="math inline">\(y_{it}\)</span>: productividad del trabajador <span class="math inline">\(i\)</span> en el tiempo <span class="math inline">\(t\)</span></p>
+<p><span class="math inline">\(\delta_t\)</span>: fectos fijos de tiempo (impuestos, estación, etc.)</p>
+<p><span class="math inline">\(\alpha_i\)</span>: efectos fijos del trabajador</p>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/skill.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/tenure.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/curva.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="y-qué-pasa-con-los-modelos-de-lenguaje-2" class="slide level2">
+<section id="y-qué-pasa-con-los-modelos-de-lenguaje-3" class="slide level2">
+<h2>¿Y qué pasa con los modelos de lenguaje?</h2>
+<p><strong>Pero…</strong></p>
+<div>
+<ul>
+<li class="fragment">No es un reemplazo del analista</li>
+<li class="fragment">Se deben hacer las preguntas correctas</li>
+<li class="fragment">Se debe supervisar lo que hace GPT</li>
+<li class="fragment">No podemos perder el control de nuestro código</li>
+</ul>
+</div>
+</section>
+<section id="y-qué-pasa-con-los-modelos-de-lenguaje-4" class="slide level2">
 <h2>¿Y qué pasa con los modelos de lenguaje?</h2>
 <p>Aprovechen este curso para equivocarse y aprender</p>
 <div class="fragment">
@@ -476,6 +525,11 @@
 <li>Pensamiento algorítmico</li>
 </ul>
 </div>
+</section>
+<section id="y-qué-pasa-con-los-modelos-de-lenguaje-5" class="slide level2">
+<h2>¿Y qué pasa con los modelos de lenguaje?</h2>
+<p>Esta tecnología está disponible para hacer sus trabajos</p>
+<p>La tarea individual deberá hacerse “a la antigua”</p>
 </section>
 <section id="existen-muchos-lenguajes" class="slide level2">
 <h2>Existen muchos lenguajes</h2>
@@ -535,7 +589,7 @@
 <span id="cb1-6"><a href=""></a>total_time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>() <span class="sc">-</span> start  </span>
 <span id="cb1-7"><a href=""></a><span class="fu">sprintf</span>(<span class="st">"Me demoré %s segundos en contar"</span>, <span class="fu">round</span>(total_time, <span class="dv">3</span>) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Me demoré 0.144 segundos en contar"</code></pre>
+<pre><code>[1] "Me demoré 0.104 segundos en contar"</code></pre>
 </div>
 </div>
 </div>
@@ -765,9 +819,9 @@
 <section id="operadores-lógicos" class="slide level2">
 <h2>Operadores lógicos</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">&amp;</a></li><li><a href="#tabset-1-2">|</a></li><li><a href="#tabset-1-3">comparación</a></li><li><a href="#tabset-1-4">distinto</a></li><li><a href="#tabset-1-5">&lt;</a></li><li><a href="#tabset-1-6">&gt;</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">&amp;</a></li><li><a href="#tabset-2-2">|</a></li><li><a href="#tabset-2-3">comparación</a></li><li><a href="#tabset-2-4">distinto</a></li><li><a href="#tabset-2-5">&lt;</a></li><li><a href="#tabset-2-6">&gt;</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1">
+<div id="tabset-2-1">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href=""></a>verdadero <span class="sc">&amp;</span> falso</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -775,7 +829,7 @@
 </div>
 </div>
 </div>
-<div id="tabset-1-2">
+<div id="tabset-2-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href=""></a>verdadero <span class="sc">|</span> falso</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -783,7 +837,7 @@
 </div>
 </div>
 </div>
-<div id="tabset-1-3">
+<div id="tabset-2-3">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href=""></a>verdadero <span class="sc">==</span> falso</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -792,7 +846,7 @@
 </div>
 <p><strong>NOTA:</strong> Diferente al igual de asignación</p>
 </div>
-<div id="tabset-1-4">
+<div id="tabset-2-4">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href=""></a>verdadero <span class="sc">!=</span> falso</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -800,7 +854,7 @@
 </div>
 </div>
 </div>
-<div id="tabset-1-5">
+<div id="tabset-2-5">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href=""></a><span class="dv">4</span> <span class="sc">&lt;</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -809,7 +863,7 @@
 </div>
 <p>También podemos usar &lt;=</p>
 </div>
-<div id="tabset-1-6">
+<div id="tabset-2-6">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href=""></a><span class="dv">4</span> <span class="sc">&gt;</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -1382,9 +1436,9 @@
 <section id="tarea-opcional-con-puntaje" class="slide level2">
 <h2>Tarea opcional con puntaje</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Instrucciones</a></li><li><a href="#tabset-2-2">Ejemplos</a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Instrucciones</a></li><li><a href="#tabset-3-2">Ejemplos</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1">
+<div id="tabset-3-1">
 <ul>
 <li><p>Crear una cuenta en scratch <a href="https://scratch.mit.edu/">aquí</a></p></li>
 <li><p>Crear un proyecto de scratch que tenga al menos los siguientes elementos</p>
@@ -1397,7 +1451,7 @@
 </ul>
 <p>Tendrán 6 décimas para mejorar su nota en la <del>difícil</del> tarea</p>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-3-2">
 <p><strong>Algunas opciones</strong>:</p>
 <ul>
 <li>Una historia</li>
