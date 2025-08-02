@@ -2,3 +2,5 @@ data/
 venv/
 .Rhistory
 .Rproj.user/
+tarea_scratch.*
+tarea_1*
