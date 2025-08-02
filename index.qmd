@@ -871,7 +871,7 @@ Se asume que el manejo de dataframes con `dplyr` es parte de otros cursos
   - Creación y utilización de una variable
   - Un ciclo (repeat) que se rompa a partir de una condición
 
-Tendrán 5 décimas para mejorar su nota en la ~~difícil~~ tarea 
+Tendrán 6 décimas para mejorar su nota en la ~~difícil~~ tarea 
 
 ## Ejemplos
 
